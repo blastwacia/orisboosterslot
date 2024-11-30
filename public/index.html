@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slot Booster</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Bagian Logo -->
+    <div class="header">
+      <!-- Menambahkan logo di atas tulisan ORISGAMING -->
+      <img src="images/logo.png" alt="Logo Ciatoto" class="header-logo">
+      <h1 class="logo"></h1>
+    </div>
+
+    <!-- Pilih Provider dan Game -->
+    <div class="selection">
+      <div class="provider">
+        <h3>Pilih Provider</h3>
+        <div class="slider">
+          <button class="slider-btn" id="prev-provider">&lt;</button>
+          <img src="images/pragmatic.png" alt="Pragmatic" id="provider-image">
+          <button class="slider-btn" id="next-provider">&gt;</button>
+        </div>
+      </div>
+
+      <div class="game">
+        <h3>Pilih Permainan</h3>
+        <div class="slider">
+          <button class="slider-btn" id="prev-game">&lt;</button>
+          <img src="images/gates_of_olympus.png" alt="Game" id="game-image">
+          <button class="slider-btn" id="next-game">&gt;</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pilih Nominal Bet -->
+    <div class="betting">
+      <h3>Bet</h3>
+      <select id="betting-select">
+        <option>Rp 400,00</option>
+        <option>Rp 800,00</option>
+        <option>Rp 1.000,00</option>
+        <option>Rp 1.200,00</option>
+        <option>Rp 1.380,00</option>
+        <option>Rp 1.400,00</option>
+        <option>Rp 1.600,00</option>
+        <option>Rp 1.800,00</option>
+        <option>Rp 2.000,00</option>
+      </select>
+    </div>
+
+    <!-- Form Input -->
+    <div class="form">
+      <div class="form-group">
+        <label>Username</label>
+        <input type="text" id="username" placeholder="Masukkan Username">
+      </div>
+      <div class="form-group">
+        <label>Server</label>
+        <select id="server">
+          <option>Rusia</option>
+          <option>Indonesia</option>
+          <option>Thailand</option>
+          <option>Kamboja</option>
+          <option>China</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Device</label>
+        <select id="device">
+          <option>Android</option>
+          <option>IOS</option>
+          <option>Windows</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Item Persentase -->
+    <div class="item-percentage" id="item-container">
+      <!-- 6 Item Game -->
+      <div class="item-row">
+        <div class="item">
+          <img src="images/item1.jpg" alt="Item 1">
+        </div>
+        <div class="percentage">
+          <div class="percentage-bar low">
+            <span class="percentage-value" id="item1-percentage">0%</span>
+          </div>
+        </div>
+      </div>
+      <div class="item-row">
+        <div class="item">
+          <img src="images/item2.jpg" alt="Item 2">
+        </div>
+        <div class="percentage">
+          <div class="percentage-bar medium">
+            <span class="percentage-value" id="item2-percentage">0%</span>
+          </div>
+        </div>
+      </div>
+      <div class="item-row">
+        <div class="item">
+          <img src="images/item3.jpg" alt="Item 3">
+        </div>
+        <div class="percentage">
+          <div class="percentage-bar high">
+            <span class="percentage-value" id="item3-percentage">0%</span>
+          </div>
+        </div>
+      </div>
+      <div class="item-row">
+        <div class="item">
+          <img src="images/item4.jpg" alt="Item 4">
+        </div>
+        <div class="percentage">
+          <div class="percentage-bar low">
+            <span class="percentage-value" id="item4-percentage">0%</span>
+          </div>
+        </div>
+      </div>
+      <div class="item-row">
+        <div class="item">
+          <img src="images/item5.jpg" alt="Item 5">
+        </div>
+        <div class="percentage">
+          <div class="percentage-bar medium">
+            <span class="percentage-value" id="item5-percentage">0%</span>
+          </div>
+        </div>
+      </div>
+      <div class="item-row">
+        <div class="item">
+          <img src="images/item6.jpg" alt="Item 6">
+        </div>
+        <div class="percentage">
+          <div class="percentage-bar high">
+            <span class="percentage-value" id="item6-percentage">0%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tombol Start -->
+    <button id="start-btn">Start</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
